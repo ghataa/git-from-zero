@@ -1,11 +1,12 @@
 # git-from-zero
-This is a step-by-step guide for learning git and how we use it at Vimage App.
+This is a step-by-step guide for learning most frequently occurring cases with git in a developer life.
 ## Introduction
-TODO
+When I started to use git it was hard to find well-tried practices. During the years I learned how to use the main and basic functionalities effectively. Of course there can be better or more simply solutions for some cases. Now I'd like to share my knowledge.
 ## Install git
-TODO
+First you have to install git which is really simple, no matter which OS you are using. You can find proper instructions on the official website:
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ## Basic terms
-TODO
+Let's talk about some terms related to version control and git!
 ## 1. Fork and clone the repo
 TODO
 ## 2. Create your first branch
@@ -23,4 +24,6 @@ TODO
 ## 8. Interactive rebase
 TODO
 ## 9. Stash
+TODO
+## 10. Go further
 TODO
