@@ -26,24 +26,38 @@ Since here everything is local, each branch should have a representation in the 
 ## 3. Create your first branch | git checkout -b [new-branch-name]
 Since you work together with others on the same project, it's recommended to use separate branches for your tasks. Here you can do whatever you just want, it won't affect others. If you finished with your task, you can just simply merge your branch into the main one. What you should keep in mind: keep your main branch always consistent! It shouldn't contain half finished solutions.
 
-So we are now on the **master** which is the main branch of our project. Let's say we noticed a bug and want to change the title of chapter 2. First, create your own brach:
+So we are now on the **master** which is the main branch of our project. Let's say we noticed a bug and have to change the title of chapter 2. First, create your own brach:
 
 ```git checkout -b my-first-branch```
 
 You can do your work now, change the title from "The Pool of T" to "The Pool of Tears"!
-## 4. Commit and push
+## 4. Stage and commit | git add [file_name] | git commit -m "[title]"
+If you check the status now, you can see that *project/chapter_2.txt* was modified. First we have to add all of our changes to the stage otherwise they won't be commited:
+
+```git add project/chapter_2.txt```
+
+Note: If you have more than one modified files and you want to stage all of them, you can do it simply like this:
+
+```git add .```
+
+Let's check the status again! Git says "changes to be committed" so our modifications are ready for commit:
+
+```git commit -m "Fix title bug" -m "Optional description comes here"```
+
+The first "-m" option is mandatory and you can specify the title of commit with that. It is recommended not to use long titles: 50-60 characters should be enough! Title should explain WHAT does the given commit instead of HOW! For example "Fix XY crash" instead of "Check if XY object is null". The second "-m" is optional. If you want to add more detail what these changes do, you can specify it here.
+## 5. Push
 TODO
-## 5. Create merge request
+## 6. Create merge request
 TODO
-## 6. Pull and fetch
+## 7. Pull and fetch
 TODO
-## 7. Amend and force push
+## 8. Amend and force push
 TODO
-## 8. Rebase
+## 9. Rebase
 TODO
-## 9. Interactive rebase
+## 10. Interactive rebase
 TODO
-## 10. Stash
+## 11. Stash
 TODO
-## 11. Go further
+## 12. Go further
 TODO
