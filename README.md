@@ -46,7 +46,11 @@ Let's check the status again! Git says "changes to be committed" so our modifica
 
 The first "-m" option is mandatory and you can specify the title of commit with that. It is recommended not to use long titles: 50-60 characters should be enough! Title should explain WHAT does the given commit instead of HOW! For example "Fix XY crash" instead of "Check if XY object is null". The second "-m" is optional. If you want to add more detail what these changes do, you can specify it here.
 ## 5. Push
-TODO
+Commiting your changes will "save" your work in a separate state. BUT your commit exists only on your dev-machine, locally for now. If you want to share with others and/or keep it in a safe place, you have to **push** it to your remote repository:
+
+```git push```
+
+This will make your remote branch uptodate with the local one.
 ## 6. Create merge request
 TODO
 ## 7. Pull and fetch
