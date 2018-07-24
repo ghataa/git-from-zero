@@ -52,7 +52,24 @@ Commiting your changes will "save" your work in a separate state. BUT your commi
 
 This will make your remote branch uptodate with the local one.
 ## 6. Create merge request
-TODO
+Since we fixed the given issue, we want to share it with others. Or in other words, we want to present our changes on the **master** branch. The solution is simple, we just have to merge our branch into the **master**. Do it simply with GitHub's GUI:
+
+- open your remote repo in GitHub
+- click on *Pull requests*
+- click on *New pull request* button
+- "base" should be the **master**
+- "compare" should be your working banch
+- click on *Create pull request* button
+- add a short, informative title
+- description can contain screenshots and/or videos to give more detail about your changes
+- add a reviewer who will check your work before merging it to the **master**
+- click on *Create pull request* button
+
+Your merge request (or as GitHub says, pull request) is open now and you can check it under the *Pull requests* tab. The merge request's details screen opens with the *Conversations* tab by deafault where you can find your reviewer's comments. You can start a conversation under each comment and you can fix the remark if necessary.
+
+You can also check the *Files changed* tab where you can find what will be changed exactly when your request is accepted.
+
+We can now accept it so just simply click on the *Merge pull request* button!
 ## 7. Pull and fetch
 TODO
 ## 8. Amend and force push
