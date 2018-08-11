@@ -30,7 +30,9 @@ So we are now on the **master** which is the main branch of our project. Let's s
 
 ```git checkout -b my-first-branch```
 
-You can do your work now, change the title from "The Pool of T" to "The Pool of Tears"!
+You can do your work now, change the title from "The Pool of T" to "The Pool of Tears"! If you fixed the bug, you can check what did you modified exactly:
+
+```git diff```
 ## 4. Stage and commit | git add [file_name] | git commit -m "[title]"
 If you check the status now, you can see that *project/chapter_2.txt* was modified. First we have to add all of our changes to the stage otherwise they won't be commited:
 
@@ -42,15 +44,22 @@ Note: If you have more than one modified files and you want to stage all of them
 
 Let's check the status again! Git says "changes to be committed" so our modifications are ready for commit:
 
-```git commit -m "Fix title bug" -m "Optional description comes here"```
+```git commit -m "Fix second chapter's bug" -m "Optional description comes here"```
 
 The first "-m" option is mandatory and you can specify the title of commit with that. It is recommended not to use long titles: 50-60 characters should be enough! Title should explain WHAT does the given commit instead of HOW! For example "Fix XY crash" instead of "Check if XY object is null". The second "-m" is optional. If you want to add more detail what these changes do, you can specify it here.
-## 5. Push
-Commiting your changes will "save" your work in a separate state. BUT your commit exists only on your dev-machine, locally for now. If you want to share with others and/or keep it in a safe place, you have to **push** it to your remote repository:
+## 5. Push | git push
+Commiting your changes will "save" your work in a separate state. BUT your commit exists only on your dev-machine, locally for now. If you want to share with others and/or keep it in a safe place, you have to **push** it to your remote repository. This will make your remote branch uptodate with the local one:
 
 ```git push```
 
-This will make your remote branch uptodate with the local one.
+Oops, it doesn't work! Git says: "fatal: The current branch my-first-branch has no upstream branch." This is because we tried to push changes to a non-existing remote branch. We have to create it first with the "--set-upstream" tag:
+
+```git push --set-upstream origin my-first-branch```
+
+After "--set-upstream" tag you have to specify the name of the remote branch. It could be different from the local one but it's not recommended.
+
+Upcoming commits can be pushed now in the normal way as we tried before.
+
 ## 6. Create merge request
 Since we fixed the given issue, we want to share it with others. Or in other words, we want to present our changes on the **master** branch. The solution is simple, we just have to merge our branch into the **master**. Do it simply with GitHub's GUI:
 
@@ -70,15 +79,31 @@ Your merge request (or as GitHub says, pull request) is open now and you can che
 You can also check the *Files changed* tab where you can find what will be changed exactly when your request is accepted.
 
 We can now accept it so just simply click on the *Merge pull request* button!
-## 7. Pull and fetch
-TODO
+## 7. Checkout and Pull | git checkout [branch_name] | git pull
+We just finished fixing a bug and now want to work on a new task. Our current branch is **my-first-branch**, so let's go to the **master** first:
+
+```git checkout master```
+
+Let's check the git history of **master**:
+
+```git log```
+
+This command lists commits on the current branch where the latest is the first. As you can see, there is no commit with title of "Fix second chapter's bug" though we already merged it to the **master**. This is because your local **master** doesn't contain this modification yet but the remote one! Let's refresh it:
+
+```git pull```
+
+This command pulls the current branch and make it uptodate with the remote one.
 ## 8. Amend and force push
 TODO
-## 9. Rebase
+## 9. Fetch and Rebase
 TODO
 ## 10. Interactive rebase
 TODO
-## 11. Stash
+## 11. Delete branch
 TODO
-## 12. Go further
+## 12. Stash
+TODO
+## 13. Go further
+TODO
+## 14. Summary
 TODO
