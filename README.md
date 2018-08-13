@@ -4,9 +4,24 @@ This is a step-by-step guide for learning most frequently occurring cases with g
 When I started to use git it was hard to find well-tried practices. During the years I learned how to use the main and basic functionalities effectively. Of course there can be better or more simply solutions for some cases. Now I'd like to share my knowledge.
 ## Install git
 First you have to install git which is really simple, no matter which OS you are using. You can find proper instructions on the official website:
+
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ## Basic terms
-Let's talk about some terms related to version control and git! TODO
+Before you can start to work with git, you have to get familiar with some terms and the definition of version control:
+
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+https://www.atlassian.com/git/tutorials/using-branches (intro is enough here)
+
+Go forward only if you know and understand the followings:
+- what is version control in a nutshell
+- distributed version control system
+- repository (or repo)
+- snapshot
+- the three states (modified; staged; committed)
+- branch
 ## 1. Fork and clone the repo | git clone [url]
 Our dummy project consists of the chapters of Alice's adventures in Wonderland. Let's fork this repo with the button at the upper right hand corner! After that you have a copy where you can work. If you want to check it, just navigate to your GitHub profile and you can find it under the "Repositories" tab.
 
