@@ -37,7 +37,7 @@ At this point you are on the **master** branch which you can simply check like t
 
 It also tells you how your stage look like and what kind of uncommited changes you have.
 
-Since here everything is local, each branch should have a representation in the remote repository. These branch-pairs can have different names (I don't recommend it) but the remote one is marked with *origin*. So your local **master** branch is now up-to-date with the remote one: **origin/master**.
+Since here everything is local, each branch should have a representation in the remote repository. These branch-pairs must have the same names and the remote one is marked with *origin*. So your local **master** branch is now up-to-date with the remote one: **origin/master**.
 ## 3. Create your first branch | git checkout -b [new-branch-name]
 Since you work together with others on the same project, it's recommended to use separate branches for your tasks. Here you can do whatever you just want, it won't affect others. If you finished with your task, you can just simply merge your branch into the main one. What you should keep in mind: keep your main branch always consistent! It shouldn't contain half finished solutions.
 
@@ -71,7 +71,7 @@ Oops, it doesn't work! Git says: "fatal: The current branch my-first-branch has 
 
 ```git push --set-upstream origin my-first-branch```
 
-After "--set-upstream" tag you have to specify the name of the remote branch. It could be different from the local one but it's not recommended.
+After "--set-upstream" tag you have to specify the name of the remote branch.
 
 Upcoming commits can be pushed now in the normal way as we tried before.
 
