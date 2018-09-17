@@ -108,17 +108,33 @@ This command lists commits on the current branch where the latest is the first. 
 ```git pull```
 
 This command pulls the current branch and make it uptodate with the remote one.
-## 8. Amend and force push
-TODO
-## 9. Fetch and Rebase
-TODO
-## 10. Interactive rebase
-TODO
-## 11. Delete branch
-TODO
+## 8. Amend and force push | git commit --amend | git push -f
+```git commit --amend```
+
+```git push -f```
+## 9. Fetch and Rebase | git fetch | git rebase origin/[target_branch_name]
+```git fetch```
+
+```git rebase origin/master```
+
+```git push -f```
+## 10. Interactive rebase | git rebase -i origin/[target_branch_name]
+```git fetch```
+
+```git rebase -i origin/master```
+
+```git push -f```
+## 11. Delete branch | git branch -d [branch_name]
+```git branch```
+
+```git branch -d my-first-branch```
 ## 12. Stash
-TODO
+```git stash save```
+
+```git stash list```
+
+```git stash apply stash@stash{0}```
+
+```git stash drop stash@stash{0}```
 ## 13. Go further
-TODO
-## 14. Summary
 TODO
