@@ -1,4 +1,4 @@
-CHAPTER IV. The Rabbit Sends in a Little Bill
+CHAPTER IV. The Rabbit Sends HERE_IS_A_BUG in a Little BILL
 
 It was the White Rabbit, trotting slowly back again, and looking
 anxiously about as it went, as if it had lost something; and she heard
@@ -11,7 +11,7 @@ nowhere to be seen--everything seemed to have changed since her swim in
 the pool, and the great hall, with the glass table and the little door,
 had vanished completely.
 
-Very soon the Rabbit noticed Alice, as she went hunting about, and
+Very soon the Rabbit noticed Alice !!, as she went hunting about, and
 called out to her in an angry tone, 'Why, Mary Ann, what ARE you doing
 out here? Run home this moment, and fetch me a pair of gloves and a fan!
 Quick, now!' And Alice was so much frightened that she ran off at once
