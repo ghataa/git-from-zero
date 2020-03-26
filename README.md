@@ -3,17 +3,15 @@ This is a step-by-step guide for learning most frequently occurring cases with g
 ## Introduction
 When I started to use git it was hard to find well-tried practices. During the years I learned how to use the main and basic functionalities effectively. Of course there can be better or more simply solutions for some cases. Now I'd like to share my knowledge.
 ## Install git
-First you have to install git which is really simple, no matter which OS you are using. You can find proper instructions on the official website:
-
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+First, you have to install git which is really simple, no matter which OS you are using. You can find proper instructions on the [official website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 ## Basic terms
 Before you can start to work with git, you have to get familiar with some terms and the definition of version control:
 
-https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+[Getting Started About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
-https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+[Getting Started Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
-https://www.atlassian.com/git/tutorials/using-branches (intro is enough here)
+[Using Branches](https://www.atlassian.com/git/tutorials/using-branches) (intro is enough here)
 
 Go forward only if you know and understand the followings:
 - what is version control in a nutshell
@@ -137,4 +135,6 @@ This command pulls the current branch and make it uptodate with the remote one.
 
 ```git stash drop stash@stash{0}```
 ## 13. Go further
-TODO
+There are many people who already have deep experiences with using git on a daily basis. You can learn many-many best practices from them and shortcut your learning curve.
+
+Let me suggest a great article from [Chris Beams](https://twitter.com/cbeams) about [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)! Don't hesitate to give it a try! ;)
